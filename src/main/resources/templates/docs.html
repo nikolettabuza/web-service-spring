@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resource URLs:</title>
+</head>
+<body>
+<h2 th:text="'Endpoints:'"/>
+<ul> localhost:8081 </ul>
+<h3 th:text="'Resource URL Patterns:'"/>
+<h4 th:text="'cURL'"/>
+    <ul> /greeting/{name}</ul>
+    <ul> /cars</ul>
+    <ul> /car/{id}</ul>
+<h4 th:text="'Browser'"/>
+    <ul> /t/greeting/{name}</ul>
+    <ul> /t/cars</ul>
+    <ul> /t/car/{id}</ul>
+<p th:text="'Available IDs: 0, 1' "/>
+<p th:text="'Providing a different ID triggers a response clarifying that there is no car by that specific ID.' "/>
+</body>
+</html>
